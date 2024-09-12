@@ -1,0 +1,11 @@
+.navbar-container {
+  background-color: #11112c;
+  padding: 1rem 0;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.88rem;
+    align-items: center;
+  }
+}

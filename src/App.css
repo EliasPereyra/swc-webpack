@@ -1,0 +1,17 @@
+.mainApp-container {
+  padding: 8rem;
+
+  .posts-container {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+
+    ul {
+      background-color: #111;
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  }
+}

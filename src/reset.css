@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #112;
+}
+
+:is(h1, h2, h3, p, a, li, pre) {
+  color: #fef;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #faa;
+  }
+}
