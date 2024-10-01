@@ -17,6 +17,7 @@ export default {
     compress: true,
     port: 9000,
     hot: true,
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -50,4 +51,10 @@ export default {
       template: path.join(__dirname, "public/index.html"),
     }),
   ],
+  resolve: {
+    extensions: [".js", ".jsx"],
+    alias: {
+      "@": path.join(__dirname, "src"),
+    },
+  },
 };
