@@ -19,6 +19,21 @@ Por lo general, para poder traducir el código de JavaScript a código máquina 
 **Nota**: La transpilación no reemplaza la compilación a código máquina, sino que es un proceso previo a la compilación. Ésta compilación que realizan los motores de JavaScript (V8, SpiderMonkey, JavaScriptCore, etc.) se le llama **Just-in-Time (JIT)** el cual mejora el rendimiento. En el caso de los navegadores, cada uno tiene su propio motor de JavaScript, y realiza tanto la transpilación como la compilación JIT automáticamente.
 
 <!-- - TODO: write about How to work with swc -->
+
+## ¿Cómo comenzar a trabajar con swc?
+
+Para poder comenzar a usar swc en nuestro proyecto, debemos instalar dos paquetes: `@swc/core` y `@swc/cli`.
+
+```bash
+  npm i -D @swc/core @swc/cli
+```
+
+Luego creamos un archivo llamado `.swrrc`, donde estará la configuración que será usado para procesar todos los archivos que le indiquemos, por ej., si queremos procesar archivos **JSX** o **TypeScript**.
+
+Ahora para que sea ejecutado esta configuración, debemos especificarlo en el empaquetador que estemos usando, en este caso sería **Wepback**. Utilizamos un _plugin_ llamado `swc-loader`. Este es el que procesará y hará la transpilación de los archivos que sean `.js` o `.jsx`.
+
+¿Pero por qué JSX específicamente? En este proyecto utilizamos la librería llamada **React.js**, que utiliza la sintaxis **JSX**,
+
 <!-- - TODO: write a Comparison with babel -->
 <!-- - TODO: hacer un spa sencillo como ejemplo. -->
 <!-- - TODO: Agregar unit testing como ej de integracion con swc. -->
