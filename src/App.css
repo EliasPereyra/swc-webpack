@@ -1,17 +1,27 @@
-.mainApp-container {
+.main-container {
+  text-align: center;
   padding: 8rem;
 
-  .posts-container {
-    padding: 0.5rem;
-    border-radius: 0.5rem;
+  p {
     margin-top: 1rem;
+  }
+}
 
-    ul {
-      background-color: #111;
-      margin-top: 1rem;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
+.posts-container {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+
+  ul {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    li {
+      border-radius: 0.77rem;
+      background-color: #0a070d;
+      padding: 1rem;
     }
   }
 }
