@@ -1,10 +1,7 @@
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const srcPath = path.resolve(__dirname, "src");
+const srcPath = path.join(import.meta.dirname, "src");
 
 export default {
   entry: `${srcPath}/index.jsx`,
