@@ -44,7 +44,7 @@ Es una buena práctica usar módulos ES y no basarse en `__dirname`, ya que perm
 Esto es necesario para que Webpack sepa dónde está el archivo principal y en qué carpeta debe guardar los archivos procesados.
 
 > [!NOTE]
-> Desde la [versión v22.11.0](https://nodejs.org/en/blog/release/v20.11.0), para los módulos ES ya no hace falta usar el módulo `node:url` ni `node:path`, sino que simplemente usando `import.meta.filename` obtienes la ruta completa del archivo y `import.meta.dirname` la ruta completa de la carpeta contenedora del archivo, [aquí está explicado](https://github.com/nodejs/node/pull/48740).
+> Desde la [versión v22.11.0](https://nodejs.org/en/blog/release/v20.11.0), para los módulos ES ya no hace falta usar el módulo `node:url`, sino que simplemente usando `import.meta.filename` obtienes la ruta completa del archivo y `import.meta.dirname` la ruta completa de la carpeta contenedora del archivo, [aquí está explicado](https://github.com/nodejs/node/pull/48740).
 
 Como alternativa, y también con versiones anteriores a `v22.11.0` puedes realizar el boilerplate para que funcione de la misma forma en módulos ES, para resolver una ruta absoluta, sea del archivo o de la carpeta que lo contiene.
 
