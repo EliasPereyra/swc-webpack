@@ -13,29 +13,30 @@ body {
   background-color: hsla(242, 70%, 13%, 1);
   background-image: radial-gradient(
       at 4% 50%,
-      hsla(289, 33%, 21%, 1) 0px,
+      rgb(40, 25, 75) 0px,
       transparent 50%
     ),
-    radial-gradient(at 79% 2%, hsla(254, 48%, 15%, 1) 0px, transparent 50%),
-    radial-gradient(at 73% 31%, hsla(229, 64%, 24%, 1) 0px, transparent 50%),
-    radial-gradient(at 51% 24%, hsla(264, 26%, 7%, 1) 0px, transparent 50%);
+    radial-gradient(at 79% 2%, rgb(24, 16, 54) 0px, transparent 50%),
+    radial-gradient(at 73% 31%, rgb(21, 36, 102) 0px, transparent 70%),
+    radial-gradient(at 51% 24%, rgb(26, 17, 37) 0px, transparent 50%),
+    radial-gradient(at 62% 64%, rgb(27, 11, 53) 0px, transparent 50%);
 }
 
-:is(p, a, li, pre) {
+:is(p, a, li, pre, strong) {
   color: rgb(230, 214, 230);
 }
 
-:is(h1, h2, h3, h4) {
+:is(h1, h2, h3, h4, h5) {
   color: #fef;
 }
 
 p {
   line-height: 1.44rem;
-  font-size: clamp(0.4rem, 3.2vw - 1rem, 1rem);
+  font-size: clamp(0.4rem, 3.2vw - 1rem, 1.2rem);
 }
 
 h1 {
-  font-size: clamp(1.2rem, 9.5vw - 3rem, 2.986rem);
+  font-size: clamp(1.2rem, 9.5vw - 3rem, 3.1rem);
   font-weight: 900;
 }
 
@@ -53,6 +54,6 @@ a {
   transition: color 0.3s ease;
 
   &:hover {
-    color: #faa;
+    color: #bf9beb;
   }
 }
