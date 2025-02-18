@@ -1,0 +1,13 @@
+.contact-container {
+  padding: 3rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-inline: auto;
+    font-size: 1rem;
+  }
+}
