@@ -2,26 +2,35 @@
   text-align: center;
   padding: 8rem;
 
-  p {
+  .main-description {
     margin-top: 1rem;
+    width: 65ch;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-wrap: pretty;
+    margin-inline: auto;
+  }
+
+  a {
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: #11112c;
+    color: #d4d4ec;
+    border: 1px solid #c2c2f3;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    padding: 1rem 2.6rem;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+      border-color: #bf9beb;
+    }
   }
 }
 
-.posts-container {
-  padding: 2rem;
-  border-radius: 0.5rem;
-  margin-top: 1rem;
-
-  ul {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-
-    li {
-      border-radius: 0.77rem;
-      background-color: #0a070d;
-      padding: 1rem;
-    }
-  }
+.card-container {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
