@@ -1,10 +1,15 @@
 import { Navbar } from "@/components/navbar";
 
+import "./contact.css";
+
 export default function Contact() {
   return (
-    <section>
+    <>
       <Navbar />
-      <h2>Contact me</h2>
-    </section>
+      <section className="contact-container">
+        <h2>Contact me</h2>
+        <p>Just the same contact content for every contact page</p>
+      </section>
+    </>
   );
 }
