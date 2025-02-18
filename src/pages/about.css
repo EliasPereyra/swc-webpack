@@ -1,0 +1,16 @@
+.about-container {
+  padding: 3rem;
+  text-align: center;
+
+  p {
+    margin-inline: auto;
+    margin-top: 1rem;
+    width: 40ch;
+    text-wrap: pretty;
+
+    .about-link {
+      color: #c2c2f3;
+      text-decoration: underline;
+    }
+  }
+}
