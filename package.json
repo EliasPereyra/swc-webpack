@@ -8,8 +8,13 @@
     "dev": "webpack-dev-server",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react",
+    "swc",
+    "webpack",
+    "jest"
+  ],
+  "author": "Elias Pereyra",
   "license": "ISC",
   "description": "",
   "devDependencies": {
