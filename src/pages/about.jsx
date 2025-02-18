@@ -9,8 +9,15 @@ export default function About() {
       <section className="about-container">
         <h2>About me</h2>
         <p>
-          Elias Pereyra, software developer based in Argentina, with a lot of
-          curiosity.
+          <a
+            className="about-link"
+            href="https://github.com/EliasPereyra"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Elias Pereyra
+          </a>
+          , software developer based in 🇦🇷 Argentina
         </p>
       </section>
     </>
