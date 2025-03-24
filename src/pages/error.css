@@ -1,0 +1,19 @@
+.error-page {
+  padding: 8rem;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-inline: auto;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  a {
+    color: #c2c2f3;
+    text-decoration: underline;
+  }
+}
